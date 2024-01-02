@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            padding: o;
+            margin: 0;
+            
+            
+        }
+        nav {
+            display: flex;
+            width: 100%; 
+            padding: 20px; /* Added padding for better appearance */
+            align-items: center;
+            margin-left: -60px;
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            width: 50%; 
+            align-items: center; 
+        }
+
+        nav img {
+            width: 300px;
+        }
+
+        nav li {
+            list-style: none;
+            background-color: white;
+            padding: 10px; /* Added padding for better appearance */
+        }
+
+        /* Add styling for the bars icon */
+        .fa-bars {
+            font-size: 54px; /* Adjust the font size as needed */
+            cursor: pointer;
+            color: rgb(91, 88, 88);
+        }
+        .main-div {
+            display: flex;
+        }
+
+        .desktop-banner{
+            background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 700px;
+        height: 400px;
+        
+            
+        }
+       
+
+        .first-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow-y: auto;
+            
+    
+        }
+        .form{
+            width: 50%;
+            margin-left: 150px;
+           
+            
+        }
+        .header-text {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 50px;
+            font-size: 20px;
+        }
+
+        input {
+            width: 600px;
+            height: 60px;
+            background-color: rgba(224, 231, 255, .52);
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            margin-top: 15px;
+        }
+
+        label {
+            margin-left: 10px;
+            color: rgb(120, 116, 116);
+        }
+
+        .second-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(https://cdn.kobobid.com/live/icon/Pattern2.png);
+            background-size: cover;
+            height: 1000px;
+            width: 100%;
+            margin: 0;
+        }
+        .campaign-code {
+                display: none;
+        }
+        .referal{
+            display: none;
+        }
+        .container-sec {
+            width: 100%;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            
+        }
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #000;
+            position: relative;
+            margin-right: 10px;
+            cursor: pointer;
+            
+        }
+       .checktext{
+        font-size: 20px;
+        color: black;
+        width: 100%;
+        margin-left: 10px;
+       }
+       .signup{
+        height: 60px;
+        background-color:#81c6c9 ;
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        box-shadow: 4px 4px 8px 0 rgba(0,0,0,.2);
+        
+       }
+       @media screen and (min-width: 380px) and (max-width: 1020px){
+        .second-div{
+            display: none;
+        }
+        .form{
+            margin-right: -100px;
+        }
+        .main-div{
+            
+        }
+        nav{
+            display: flex;
+        }
+        label{
+            width: 50%;
+        }
+        .header-text{
+            font-size: 15px;
+        }
+        .desktop-banner{
+            max-width: 100%;
+            margin-left: 50px;
+        }
+       
+       }
+      
+    </style>
+</head>
+
+<body>
+<nav class="">
+<ul>
+    <li><i class="fa-solid fa-bars"></i></li>
+    <figure><img src="./assets/logo2.png" alt=""></figure>
+</ul>
+</nav>
+
+    <div class="main-div">
+        <section class="first-div">
+            <figure class="banner1">
+                <img class="desktop-banner"
+                    src="./assets/Signup-Login+banner+Desktop.jpeg" alt="">
+            </figure>
+            <div class="signup-div">
+                <header class="header-text">
+                    <h1>SIGN UP</h1>
+                    <h3>Already have an account? <a href="">Login</a></h3>
+                </header>
+
+                <form action="" class="form">
+                    <div class="label">
+                        <label for="firstname">FIRST NAME</label><BR>
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <div class="label">
+                        <label for="firstname">LAST NAME</label><BR>
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <div class="label-">
+                        <label for="firstname">USERNAME</label><BR>
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <div class="label">
+                        <label for="firstname">EMAIL</label><BR>
+                        <input type="email" placeholder="" required>
+                    </div>
+                    <div class="label">
+                        <label for="firstname">PHONE NUMBER</label><BR>
+                        <input type="email" placeholder="" required>
+                    </div>
+                    <div class="label">
+                        <label for="firstname">PASSWORD</label><BR>
+                        <input type="password" placeholder="" required>
+                    </div>
+                    <div>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="checkbox" id="myCheckbox" onclick="display()">
+                            <div class="tick"></div>
+                            <span class="checktext">Do you have a code for special discounts and rewards?</span>
+                        </label>
+                        <div class="campaign-code" id="code">
+                            <label for="code">CAMPAIGN CODE</label> <br>
+                            <input type="text" name="" id="">
+                        </div>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="checkbox" id="referralCheckbox" onclick="referralCode()">
+                            <div class="tick"></div>
+                            <span class="checktext">Did someone refer you to our website?</span>
+                        </label>
+                        <div class="referal" id="ref-code">
+                            <label for="code">REFERRAL CODE</label> <br>
+                            <input type="text" name="" id="">
+                        </div>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="checkbox" id="myCheckbox">
+                            <div class="tick"></div>
+                            <span class="checktext">This site is only intended for use by persons who are 18 years or older
+                                and is restricted to one account per individual. By signing up, you hereby agree to
+                                operate only one user account. You also confirm that you are 18+ and that you have read
+                                and agree to our <a href="">Terms of Use </a> and <a href="">Privacy Policy.</a> </span>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="checkbox" id="myCheckbox">
+                            <div class="tick"></div>
+                            <span class="checktext">I want updates on hot auctions, incredible deals, bidding tips and
+                                more.</span>
+                        </label>
+                        <button class="signup">Sign Up</button>
+                </form>
+            </div>
+
+        </section>
+        <div class="container-sec">
+            <a href="" class="second-div">
+                <img style="width: 300px;" src="./assets/logo-stacked.png" alt="Kobobid">
+            </a>
+        </div>
+    </div>
+
+
+    <script>
+        let thick = document.getElementById("myCheckbox")
+        let displayedText = document.getElementById("code")
+        let referralText = document.getElementById("referralCheckbox")
+
+        let referral = document.getElementById("ref-code")
+    
+        function display() {
+            displayedText.style.display = thick.checked ? "block" : "none";
+        }
+        
+
+        function referralCode(){
+            referral.style.display = referralText.checked ? "block" : "none";
+        }
+    </script>
+</body>
+
+</html>

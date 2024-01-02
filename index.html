@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: black;
+        }
+        .nav-div {
+            display: flex;
+            background-color: black;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        .logo-div img {
+            width: 180px;
+            margin-top: 20px;
+        }
+
+        .first-list {
+            display: inline-block;
+            list-style: none;
+        }
+
+        li:hover {
+            background-color: #56b2b8;
+            color: white;
+            padding: 20px;
+            transition: 1.5s;
+        }
+        .first-a:hover{
+            color: black;
+        }
+
+        .first-a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+            font-size: 14px;
+            
+
+        }
+
+        .login {
+            color: white;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .signup-button {
+            padding: 20px 25px;
+            background-color: orange;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        .scratch-auction-div {
+            display: flex;
+        }
+
+        .mini-container {
+            position: relative;
+        }
+
+        .text-overlay-scratchcard {
+            position: absolute;
+            top: 60%;
+            left: 76%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 1px solid #feaa5d;
+            color: #feaa5d;
+            ;
+            padding: 20px 10px;
+            border-radius: 3px;
+            box-shadow: 0px 0px 0px 0px;
+            width: 38%;
+            cursor: pointer;
+        }
+
+        .text-overlay-auction {
+            position: absolute;
+            top: 60%;
+            right: 40%;
+            transform: translate(-50%, -50%);
+            background-color: #feaa5d;
+            border: 1px solid white;
+            color: white;
+            padding: 20px 10px;
+            border-radius: 3px;
+            box-shadow: 0px 0px 0px 0px;
+            width: 38%;
+            cursor: pointer;
+        }
+
+        .text-overlay-fantasy {
+            position: absolute;
+            top: 60%;
+            left: 76%;
+            transform: translate(-50%, -50%);
+            background-color: #56b2b8;
+            border: 1px solid white;
+            color: white;
+            ;
+            padding: 20px 10px;
+            border-radius: 3px;
+            box-shadow: 0px 0px 0px 0px;
+            width: 38%;
+            cursor: pointer;
+        }
+
+        .text-overlay-raffle {
+            position: absolute;
+            top: 60%;
+            right: 40%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 1px solid #feaa5d;
+            color: #feaa5d;
+            ;
+            padding: 20px 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 0px 0px;
+            width: 38%;
+            cursor: pointer;
+        }
+
+        .icone {
+            background-color: #56b2b8;
+            border: 1px solid white;
+            margin-top: -1px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .footer-logo {
+            width: 30%;
+            margin-top: 10px;
+        }
+
+        .footer-logo img {
+            width: 200px;
+        }
+
+        .last-div {
+            display: flex;
+            background-color: #56b2b8;
+            justify-content: space-between;
+        }
+        .footer-first-container{
+            padding: 20px;
+            width: 100%;
+            margin-right: 50px;
+            margin-left: 30px;
+        }
+        p {
+            color: white;
+        }
+          
+          .social-media-list {
+            display: flex;
+            margin-bottom: 20px;
+            margin-top: 20px;
+          }
+          .favicon-div{
+            padding: 10px 20px;
+          }
+          .fab.fa-twitter,
+          .fab.fa-instagram,
+          .fab.fa-facebook,
+          .fa-brands.fa-linkedin{
+            color: white;
+          }
+        .second-a {
+            text-decoration: none;
+            color: white;
+        }
+       .footer-container{
+        padding: 20px;
+        width: 50%;
+       }
+        .footer-heading {
+            font-family: 'FuturaPTMedium', sans-serif;
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+        .footer-a-div{
+            padding: 10px;
+        }
+        .footer-button{
+            display: flex;
+        }
+        .footer-login-button{
+            padding: 15px 25px;
+            border-radius: 3px;
+            border: none;
+            font-weight: bold;
+            font-size: large;
+        }
+        .footer-signup-button{
+            padding: 15px 25px;
+            border-radius: 3px;
+            border: none;
+            font-weight: bold;
+            font-size: large;
+            color: black;
+            background-color: orange;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-div" >
+        <div class="logo-div"><img src="./assets/logo2.png"></div>
+        <nav>
+            <ul>
+                <li class="first-list"><a class="first-a" href="">SCRATCH CARDS</a></li>
+                <li class="first-list"><a class="first-a" href="">RAFFLES</a></li>
+                <li class="first-list"><a class="first-a" href="">FANTASY SPORTS</a></li>
+                <li class="first-list"><a class="first-a" href="">AUCTIONS</a></li>
+                <li class="first-list"><a style="color: black; background-color: white; padding: 20px; border-radius: 5px;" class="first-a" href="login.html">LOGIN</a></li>
+                <button class="signup-button"><a href="signup.html">SIGN UP</a></button>
+            </ul>
+        </nav>
+    </nav>
+    <div class="imagemain-container">
+        <div class="scratch-auction-div">
+            <div class="mini-container">
+                <img src="./assets/scratch_home.jpeg" width="100%" height="auto" style="display:block;width:100%;height:auto">
+                <button class="text-overlay-scratchcard">SCRATCH AND WIN</button>
+            </div>
+            <div class="mini-container">
+                <img src="https://cdn.kobobid.com/live/images/home/auction_home.jpg" width="100%" height="auto"
+                    style="display:block;width:100%;height:auto">
+                <button class="text-overlay-auction">SCRATCH AND WIN</button>
+            </div>
+        </div>
+        <div class="scratch-auction-div">
+            <div class="mini-container">
+                <img src="https://cdn.kobobid.com/live/images/home/fantasy_home.jpg" width="100%" height="auto"
+                    style="display:block;width:100%;height:auto">
+                <button class="text-overlay-fantasy">SCRATCH AND WIN</button>
+            </div>
+            <div class="mini-container">
+                <img src="https://cdn.kobobid.com/live/images/home/raffle_home.jpg" width="100%" height="auto"
+                    style="display:block;width:100%;height:auto">
+                <button class="text-overlay-raffle">SCRATCH AND WIN</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <div class="icone">ICONE BIDS NIG LTD. © 2023 ALL RIGHTS RESERVED</div>
+        </div>
+        <div class="last-div">
+            <div class="footer-first-container">
+                <div class="footer-logo">
+                    <img src="https://cdn.kobobid.com/live/images/logo_white.png">
+                </div>
+                <p>Nigeria's leading online penny auction platform for high quality products and offerings to help you
+                    afford your best life.</p>
+                    <div class="social-media-list">
+                        <div class="favicon-div"><a href="https://twitter.com/alifcoder/status/1712771437629775896"><i class="fab fa-twitter"></i></a></div>
+                        <div class="favicon-div"><a href="https://www.instagram.com/adams_ruth_unique/"><i class="fab fa-instagram"></i></a></div>
+                      <div class="favicon-div"><a href="https://web.facebook.com/adams.ruth.12/"><i class="fab fa-facebook"></i></a></div>
+                      <div class="favicon-div"><a href="https://www.linkedin.com/in/adams-ruth-916543167/"><i class="fa-brands fa-linkedin"></i></a></div>
+                    </div>
+                    <div class="footer-button">
+                        <button class="footer-login-button"><a style="text-decoration: none; color: black;" href="signup.html" >LOGIN </a></button>
+                        <button class="footer-signup-button"><a style="text-decoration: none; color: white;" href="signup.html">SIGN UP</a></button>
+                    </div>
+                    
+            </div>
+            <div class="footer-container">
+                    <h3 class="footer-heading" style="color: white; font-size: 15px" >INFORMATION</h3>
+                        <div class="footer-a-div"><a class="second-a" href="">Terms of Use</a></div>
+                        <div class="footer-a-div"><a class="second-a" href="">Privacy Policy</a></div>
+                        <div class="footer-a-div"><a class="second-a" href="">Partnerships</a></div>
+                        <div class="footer-a-div"><a class="second-a" href="">Sitemap</a></div>
+            </div>
+
+            <div class="footer-container">
+                    <h3 class="footer-heading" style="color: white; font-size: 15px;">HELP</h3>
+                        <div class="footer-a-div"><a class="second-a" href="">FAQs</a></div>
+                        <div class="footer-a-div"><a class="second-a" href="">How Kobobid Works</a></div>
+                        <div class="footer-a-div"><a class="second-a" href="">Daily vs Traditional Fantasy Sports</a></div>
+                        <div class="footer-a-div"><a class="second-a" href="">What Is a BidPack?</a></div>
+                       <div class="footer-a-div"><a class="second-a" href="">Tips & Features</a></div>
+                       <div class="footer-a-div"> <a class="second-a" href="">Payments</a></div>
+            </div>
+
+            <div class="footer-container">
+                    <h3 class="footer-heading" style="color: white; font-size: 15px;">ABOUT US</h3>
+                        <div class="footer-a-div"><a class="second-a" href="aboutKobobid.html">About Kobobid</a></div>
+                       <div class="footer-a-div"><a class="second-a" href="">The Kobobid Promise</a></div>
+                        <div class="footer-a-div"><a class="second-a" href="">Partnerships</a></div>
+                       <div class="footer-a-div"><a class="second-a" href="">Contact Us</a></div>
+
+                   
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

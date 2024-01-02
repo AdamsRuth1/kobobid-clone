@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #000;
+            position: relative;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .tick {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 5px;
+            border-bottom: 2px solid #00f;
+            border-right: 2px solid #00f;
+            transform-origin: bottom right;
+            opacity: 0;
+        }
+
+        .checkbox:checked + .tick {
+            opacity: 1;
+        }
+
+        .label {
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .checkbox:checked ~ .label::after {
+            content: '❤️';
+            color: #00f;
+        }
+    </style>
+</head>
+<body>
+
+    <label class="checkbox-container">
+        <input type="checkbox" class="checkbox" id="myCheckbox">
+        <div class="tick"></div>
+        <span class="label">Do you like me?</span>
+    </label>
+
+</body>
+</html>

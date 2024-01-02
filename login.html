@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .general-div {
+            display: flex;
+        }
+
+        .first-main-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            padding: 90px;
+        }
+
+
+        .password-label {
+            display: block;
+            /* Take up remaining space */
+            margin-top: 15px;
+            color: #3c3f3c;
+            margin-right: 30%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .phone-password-container {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .input-containerpass{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .password-label{
+            margin-right: 170px;
+            color: #979997;
+        }
+        .forgot-password-label{
+            margin-top: 15px;
+            color: #979997;
+        }
+        .password-input{
+            width: 400px;
+            height: 60px;
+            background-color: rgba(224,231,255,.52);
+            border: none;
+            border-radius: 4px;
+            position:relative ;
+        }
+        /* .toggle-password{
+            position: fixed;
+            left: 50%;
+            bottom: 50%;
+            transform: translateY(50%);
+
+        } */
+        .phone-div input {
+            width: 400px;
+            height: 60px;
+            background-color: rgba(224,231,255,.52);
+            border: none;
+            border-radius: 4px;
+            margin-top: 10px;
+    
+        }
+
+        .phone-label {
+            color: #979997;
+        }
+
+        .reminder{
+            width: 400px;
+        }
+        
+        
+         button{
+            width: 400px;
+            height: 60px;
+            color: white;
+            background-color: #81c6c9;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 5px;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 4px 4px 8px 0 rgba(0,0,0,.2);
+        }
+
+        .second-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(https://cdn.kobobid.com/live/icon/Pattern2.png);
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+        }
+       
+        .container-sec {
+            width: 100%;
+            margin: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form class="general-div">
+        <div class="first-main-div">
+            <div class="header">
+                <h1>LOGIN</h1>
+                <div>Don't have an account? <a href="">Sign up</a></div>
+            </div>
+            <div class="phone-password-container">
+                <div class="phone-div">
+                    <label class="phone-label" for="phonenumber" >PHONE NUMBER OR EMAIL ADDRESS</label> <br>
+                    <input type="text" name="" id="" required>
+                </div>
+                <div class="input-containerpass">
+                    <label class="password-label" for="password">PASSWORD</label>
+                    <a href="#" class="forgot-password-label">Forgot Password?</a>
+                </div>
+                <div class="input-container">
+                    <input class="password-input" type="password" id="password" placeholder="" required>
+                </div>
+            </div>
+            <section class="paragrph-div">
+                <p class="reminder">
+                   <span style="font-weight: bold;">Friendly Reminder:</span>  You are only entitled to operate ONE account. Violation of this policy may result in
+                suspension of your account and forfeiture of your wins. Please see our <a href="">Terms of Use</a>
+                </p>
+            </section>
+            <button>Sign in</button>
+            
+        </div>
+        <div class="container-sec">
+            <a href="" class="second-div">
+                <figure><img style="width: 300px;" src="./assets/logo-stacked.png" alt="Kobobid-logo"></figure>
+            </a>
+        </div>
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const passwordInput = document.getElementById("password");
+        const togglePassword = document.getElementById("togglePassword");
+
+        togglePassword.addEventListener("click", function () {
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                togglePassword.classList.remove("fa-eye");
+                togglePassword.classList.add("fa-eye-slash");
+            } else {
+                passwordInput.type = "password";
+                togglePassword.classList.remove("fa-eye-slash");
+                togglePassword.classList.add("fa-eye");
+            }
+        });
+    </script>
+</body>
+
+</html>

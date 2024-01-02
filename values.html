@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                width: 100%;
+                background-color: rgb(243, 243, 243);
+                height: 1000px;
+            }
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           }
+        .logo {
+            width: 200px;
+            cursor: pointer;
+        }
+        .nav-bar ul li  {
+            list-style: none;
+            display: inline-block;
+            padding: 15px;
+            text-transform: uppercase;
+            position: relative;
+        }
+        .nav-bar ul li  a{
+            text-decoration: none;
+            color: black;     
+        } 
+        .nav-bar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0;
+            background-color: rgb(120, 184, 200);
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: 0.5s;
+        }
+        
+        .nav-bar ul li:hover:after {
+            width: 100%;
+        }
+        .main-div{
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: rgb(53, 206, 233);
+        }
+        .text-div {
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+        .body-image {
+            width: 500px;
+            border-radius: 10px;
+        }
+        button {
+            background-color: rgb(57, 54, 54);
+            color: white;
+            padding: 10px 5px;
+            border-radius: 5px;
+            margin-left: 20px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: orange;
+            color: black;
+        }
+        
+        .footer-text {
+            color: black;
+            text-align: center;
+            padding-top: 10px;
+            padding-right: 10px;
+    
+        }
+        .image-container {
+            width: 100px;
+            margin-right: 10px;
+            
+        }
+        .last-div {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 20px;
+        height: 400px;
+        margin-top: 20;
+    }
+    .inner-container {
+        border: none;
+        box-shadow: 3px 3px 3px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        padding-left: 20px;
+        padding-right: 10px;
+       
+    }
+    .lastdiv-container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .inner-container:hover{
+        transform: scale(1.1);
+        height: 400px;
+        margin-top: 20px;
+        transition: 0.5s;
+    }
+
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+        <div class="nav-bar">
+            <img class="logo" src="./logo2.png">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="https://kobobid.com/login">Login</a></li>
+                <li><a href="#">Signup</a></li>
+            </ul>
+        </div>
+    </div>   
+<div class="main-div">
+    <div class="text-div"> 
+        <h1> PLAY AND EARN</h1>
+        <P>Playing games on Kobobid can be beneficial in serveral ways. Firstly, it offers a fun and entertaining experience, allowing users to relax and unwind. Engaging in games can also improve cognitive abilities, such as problem-solving skills, memory, and strategic thinking.</P>  
+    <button>Learn more</button>
+    </div>
+    <div>
+        <img class="body-image" src="./scratch_home_mobile.jpeg"> 
+    </div>
+</div>
+<div class="lastdiv-container">
+    <div class="footer-text">
+        <H1>Our Core Values</H1> 
+        <p>Kobobid was born based on the following ideas: access, authenticity, fairness, and enjoyment.
+We thrive on the notion that everyone should have the opportunity to get the good things they want from life, in order to improve their general standard of living. This is why we’ve developed this business to place the opportunity to simply bid for what you want right at your fingertips.</p>
+     </div>
+<div class="last-div">
+    <div class="inner-container"> <img class="image-container" src="./image folder/access.png">
+        <h1>Access</h1>
+        <div>From bidding to winning and buying, we put the most scarce and most valuable items at your fingertips for incredibly discounted costs.</div>
+    </div>
+    <div class="inner-container"> <img class="image-container" src="./image folder/enjoyment.png">
+        <h1>Authenticity</h1>
+        <div>We don’t do sub-standard. Every item you win or buy on Kobobid is from a trusted source known for the quality of their products.</div>
+    </div>
+    <div class="inner-container"> <img class="image-container" src="./image folder/fairness.png">
+        <h1>Fairness</h1>
+        <div>At KoboBid, everyone has the fair chance - to bid, purchase items, partner with us, or start a career with us. Simply join our community.</div>
+    </div>
+    <div class="inner-container"> <img class="image-container" src="./image folder/enjoyment.png">
+        <h1>Enjoyment</h1>
+        <div>Quality enjoyment is for everybody. We’re about helping you live your best life by providing you with items that always bring you joy.</div>
+    </div>
+</div>
+</div>
+    </body>
+</html>
