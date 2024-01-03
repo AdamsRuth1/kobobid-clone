@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <script src="header.js"></script>
+        <style>
+            body {
+                width: 100%;
+                background-color: white;
+                height: 1000px;
+            }
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           }
+        .logo {
+            width: 200px;
+            cursor: pointer;
+        }
+        .nav-bar ul li  {
+            list-style: none;
+            display: inline-block;
+            padding: 15px;
+            text-transform: uppercase;
+            position: relative;
+        }
+        .nav-bar ul li  a{
+            text-decoration: none;
+            color: black;     
+        } 
+        .nav-bar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0;
+            background-color: rgb(120, 184, 200);
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: 0.5s;
+        }
+        
+        .nav-bar ul li:hover:after {
+            width: 100%;
+        }
+        .main-div{
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: rgb(53, 206, 233);
+        }
+        .text-div {
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+        .body-image {
+            width: 500px;
+            border-radius: 10px;
+        }
+        button {
+            background-color: rgb(57, 54, 54);
+            color: white;
+            padding: 10px 5px;
+            border-radius: 5px;
+            margin-left: 20px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: orange;
+            color: black;
+        }
+        
+        .footer-text {
+           text-align: center;
+            margin-left: 20px;
+            margin-right: 10px;
+            
+            background-color: white;
+            
+    
+        }
+        p{
+            color: black;
+            
+        }
+        .image-container {
+            width: 100px;
+            margin-right: 10px;
+            
+        }
+        .last-divv {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 20px;
+        height: 400px;
+        margin-top: 20;
+        margin-bottom: 20px;
+    }
+    .inner-container {
+        border: none;
+        box-shadow: 3px 3px 3px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        padding-left: 20px;
+        padding-right: 10px;
+       
+    }
+    .lastdiv-container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .inner-container:hover{
+        transform: scale(1.1);
+        height: 400px;
+        margin-top: 20px;
+        transition: 0.5s;
+    }
+   
+        </style>
+    </head>
+    <body>
+        <nav class="nav-div" >
+            <i class="fa-solid fa-bars" id="fa-bars" onclick="toggleSidebar()"></i>
+                    <figure class="logo-div"><img src="./assets/logo2.png"></figure>
+                <ul>
+                   
+                    <li class="first-list"><a class="first-a" href="">SCRATCH CARDS</a></li>
+                    <li class="first-list"><a class="first-a" href="">RAFFLES</a></li>
+                    <li class="first-list"><a class="first-a" href="">FANTASY SPORTS</a></li>
+                    <li class="first-list"><a class="first-a" href="">AUCTIONS</a></li>
+                    <li class="first-list-login"><a class="first-a" href="">LOGIN</a></li>
+                    <li class="first-list-signup"><a class="first-a" href="">SIGNUP</a></li>
+                    
+                    
+                        
+                   
+                    
+                </ul>
+            
+        </nav>
+        <nav class="sidebar-nav">
+            <ul class="sidebar-ul">
+                <li tabindex="0">AUCTIONS</li>
+                <li tabindex="0">RAFFLES</li>
+                <li tabindex="0">SPORTS</li>
+                <li tabindex="0">WINNERS</li>
+                <li tabindex="0">CONTACT US</li>
+            </ul>
+            <DIV style="width: 600px;
+            height: 2px; background-color: rgb(228, 221, 221);"></DIV>
+            <button class="signup" style="margin-top: 30px; cursor: pointer;"><a href="signup.html">SIGN UP</a></button>
+            <BUtton class="login"><a href="login.html">LOGIN</a></BUtton>
+        </nav>
+    
+    
+        <nav class="img-logo">
+            <ul>
+                <figure class="mainlogo"><a href=""><img src="./assets/nav_scratchcards.svg" alt=""></a>scratch Cards</figure>
+                <figure class="mainlogo"><a href=""><img src="./assets/nav_raffles.svg" alt=""></a>Raffles</figure>
+                <figure class="mainlogo"><a href=""><img src="./assets/nav_fantasysport.svg" alt=""></a>Fantancy Sports</figure>
+                <figure class="mainlogo"><a href=""><img src="./assets/nav_auctions.svg" alt=""></a>Auctions</figure>
+            </ul>
+        </nav>
+        <div class="banner">
+        <!-- <div class="nav-bar">
+            <img class="logo" src="./assets/logo2.png">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="https://kobobid.com/login">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </div> -->
+    </div>   
+<div class="main-div">
+    <div class="text-div"> 
+        <h1> PLAY AND EARN</h1>
+        <P>Playing games on Kobobid can be beneficial in serveral ways. Firstly, it offers a fun and entertaining experience, allowing users to relax and unwind. Engaging in games can also improve cognitive abilities, such as problem-solving skills, memory, and strategic thinking.</P>  
+    <button>Learn more</button>
+    </div>
+    <div>
+        <img class="body-image" src="./assets/scratch_home.jpeg"> 
+    </div>
+</div>
+<div class="lastdiv-container">
+    <div class="footer-text">
+        <H1>Our Core Values</H1> 
+        <p>Kobobid was born based on the following ideas: access, authenticity, fairness, and enjoyment.
+We thrive on the notion that everyone should have the opportunity to get the good things they want from life, in order to improve their general standard of living. This is why we’ve developed this business to place the opportunity to simply bid for what you want right at your fingertips.</p>
+     </div>
+<div class="last-divv">
+    <div class="inner-container"> <img class="image-container" src="./assets/access.png">
+        <h1>Access</h1>
+        <div>From bidding to winning and buying, we put the most scarce and most valuable items at your fingertips for incredibly discounted costs.</div>
+    </div>
+    <div class="inner-container"> <img class="image-container" src="./assets/enjoyment.png">
+        <h1>Authenticity</h1>
+        <div>We don’t do sub-standard. Every item you win or buy on Kobobid is from a trusted source known for the quality of their products.</div>
+    </div>
+    <div class="inner-container"> <img class="image-container" src="./assets/fairness.png">
+        <h1>Fairness</h1>
+        <div>At KoboBid, everyone has the fair chance - to bid, purchase items, partner with us, or start a career with us. Simply join our community.</div>
+    </div>
+    <div class="inner-container"> <img class="image-container" src="./assets/enjoyment.png">
+        <h1>Enjoyment</h1>
+        <div>Quality enjoyment is for everybody. We’re about helping you live your best life by providing you with items that always bring you joy.</div>
+    </div>
+</div>
+</div>
+<footer>
+    <div>
+        <div class="icone">ICONE BIDS NIG LTD. © 2023 ALL RIGHTS RESERVED</div>
+    </div>
+    <div class="last-div">
+        <div class="footer-first-container" style="display: flex; flex-direction: column; "  >
+            <div class="footer-logo">
+                <img src="https://cdn.kobobid.com/live/images/logo_white.png">
+            </div>
+            <p style="font-size: 20px; color: white;">Nigeria's leading online penny auction platform for high quality products and offerings to help you
+                afford your best life.</p>
+                <div class="social-media-list">
+                    <div class="favicon-div"><a href="https://twitter.com/alifcoder/status/1712771437629775896"><i class="fab fa-twitter"></i></a></div>
+                    <div class="favicon-div"><a href="https://www.instagram.com/adams_ruth_unique/"><i class="fab fa-instagram"></i></a></div>
+                  <div class="favicon-div"><a href="https://web.facebook.com/adams.ruth.12/"><i class="fab fa-facebook"></i></a></div>
+                  <div class="favicon-div"><a href="https://www.linkedin.com/in/adams-ruth-916543167/"><i class="fa-brands fa-linkedin"></i></a></div>
+                </div>
+                <div class="footer-button">
+                    <button class="footer-login-button" style="background-color: white;"><a style="text-decoration: none; color: black; " href="signup.html" >LOGIN </a></button>
+                    <button class="footer-signup-button"><a style="text-decoration: none; color: white;" href="signup.html">SIGN UP</a></button>
+                </div>
+                
+        </div>
+        <div class="help-info-abot">
+            <div class="info-help">
+                
+                    <div class="footer-container">
+                        <h3 class="footer-heading" style="color: white; font-size: 15px" >INFORMATION</h3>
+                            <div class="footer-a-div"><a class="second-a" href="">Terms of Use</a></div>
+                            <div class="footer-a-div"><a class="second-a" href="">Privacy Policy</a></div>
+                            <div class="footer-a-div"><a class="second-a" href="">Partnerships</a></div>
+                            <div class="footer-a-div"><a class="second-a" href="">Sitemap</a></div>
+                </div>
+    
+                <div class="footer-container" style="margin-right: 200px;">
+                        <h3 class="footer-heading" style="color: white; font-size: 15px;">HELP</h3>
+                            <div class="footer-a-div"><a class="second-a" href="">FAQs</a></div>
+                            <div class="footer-a-div"><a class="second-a" href="">How Kobobid Works</a></div>
+                            <div class="footer-a-div"><a class="second-a" href="">Daily vs Traditional Fantasy Sports</a></div>
+                            <div class="footer-a-div"><a class="second-a" href="">What Is a BidPack?</a></div>
+                           <div class="footer-a-div"><a class="second-a" href="">Tips & Features</a></div>
+                           <div class="footer-a-div"> <a class="second-a" href="">Payments</a></div>
+                </div>
+                </div>
+                
+    
+                <div class="footer-container">
+                        <h3 class="footer-heading" style="color: white; font-size: 15px;"><a href="aboutKobobid.html" style="text-decoration: none; color: black;"></a>ABOUT US</h3>
+                            <div class="footer-a-div"><a class="second-a" href="aboutKobobid.html">About Kobobid</a></div>
+                           <div class="footer-a-div"><a class="second-a" href="">The Kobobid Promise</a></div>
+                            <div class="footer-a-div"><a class="second-a" href="">Partnerships</a></div>
+                           <div class="footer-a-div"><a class="second-a" href="">Contact Us</a></div>
+    
+                       
+                </div>
+                </div>
+                
+       
+        
+            </div>
+    </div>
+
+</footer>
+
+    </body>
+</html>
