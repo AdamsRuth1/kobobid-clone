@@ -10,6 +10,7 @@
                 width: 100%;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
             }
         
         .main-div{
@@ -21,7 +22,7 @@
             margin-right: 10px;
         }
         
-        button {
+        .learn {
             background-color: rgb(57, 54, 54);
             color: white;
             padding: 10px 5px;
@@ -129,10 +130,11 @@
     align-items: center;
 }
 .inner-container{
-    width: 50%;
+    width: 70%;
     box-shadow: 0 3px 9px 6px #e8e8e8;
     height: 400px;
 }
+
 
 .first-list-login,
 .first-list-signup{
@@ -142,6 +144,7 @@
 }
 .first-list-signup{
     margin-left: -25px;
+
 }
 .first-list-login{
     margin-left: -100px;
@@ -183,8 +186,8 @@
             </ul>
             <DIV style="width: 600px;
             height: 2px; background-color: rgb(228, 221, 221);"></DIV>
-            <button class="signup" style="margin-top: 30px; cursor: pointer;"><a href="signup.html">SIGN UP</a></button>
-            <BUtton class="login"><a href="login.html">LOGIN</a></BUtton>
+            <li class="signup"><a href="signup.html" style="margin-top: 30px; cursor: pointer; color: black;">SIGN UP</a></li>
+            <li class="login"><a href="login.html" style="color: black;">LOGIN</a></li>
         </nav>
     
     
@@ -201,7 +204,7 @@
     <div class="text-div"> 
         <h1> PLAY AND EARN</h1>
         <P>Playing games on Kobobid can be beneficial in serveral ways. Firstly, it offers a fun and entertaining experience, allowing users to relax and unwind. Engaging in games can also improve cognitive abilities, such as problem-solving skills, memory, and strategic thinking.</P>  
-    <button>Learn more</button>
+    <button class="learn">Learn more</button>
     </div>
    
 </div>

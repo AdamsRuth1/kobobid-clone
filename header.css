@@ -12,12 +12,11 @@
     display: none;
     height: 100%;
     background-color: white;
-   
-    
-   
+    position: absolute;
+    z-index: 1;
 }
 .sidebar-nav nav {
-    position: absolute;
+   
    padding: 30px; /* Added padding for better appearance */
    background-color: white;
    
@@ -68,11 +67,13 @@ cursor: pointer;
     color: black;
     justify-content: space-between;
     align-items: center;
+    position: a;
     
     
     
    
 }
+
 .nav-div ul{
     display: flex;
     justify-content: space-between;
@@ -153,7 +154,7 @@ a{
     display: flex;
     background-color: white;
     justify-content: space-between;
-    
+    position: relative;
     display: none;
    
 }
@@ -212,7 +213,6 @@ a{
 }
 .footer-first-container{
     padding: 20px;
-    width: 
    
 }
 p {
