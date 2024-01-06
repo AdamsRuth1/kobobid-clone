@@ -12,6 +12,8 @@
             box-sizing: border-box;
             padding: o;
             margin: 0;
+            height: 100vh;
+            width: 100%;
             
             
         }
@@ -178,7 +180,7 @@
         width: 100%;
         margin-left: 10px;
        }
-       .signup{
+       .signupbutton{
         width: 600px;
         height: 60px;
         background-color:#81c6c9 ;
@@ -189,6 +191,7 @@
         color: white;
         margin-top: 10px;
         margin-bottom: 50px;
+        border-radius: 3px;
         box-shadow: 4px 4px 8px 0 rgba(0,0,0,.2);
         
        }
@@ -197,7 +200,9 @@
             display: none;
         }
         .form{
-            margin-right: -100px;
+            width: 80%; /* Adjust the width of the form */
+        margin: auto; /* Center the form horizontally */
+        margin-top: 50px
         }
         
         .first-div{
@@ -210,7 +215,9 @@
             display: flex;
         }
         input{
-            width: 100%;
+            width: 100%; /* Make input fields full width */
+        box-sizing: border-box; /* Include padding and border in the width */
+        margin: 10px 0;
         }
         
         .header-text{
@@ -219,18 +226,21 @@
         .desktop-banner{
             object-fit: contain;
             margin-top: 0;
-            margin-bottom: -150px;
+            margin-bottom: -120px;
             margin-top: -70px;
         }
         .header-logo img{
             width: 230px;
         }
-       .signup{
-        text-align: center;
-        width: 500px;
-        padding-right: 150px;
+       .signupbutton{
+        width: 100%; 
        }
-       
+       .checktext{
+        width: 80%;
+       }
+       .checkbox-div{
+        margin-left: 0; 
+       }
        }
       
     </style>
@@ -326,7 +336,7 @@
                             <span class="checktext">I want updates on hot auctions, incredible deals, bidding tips and
                                 more.</span>
                         </label>
-                        <button class="signup">Sign Up</button>
+                        <button class="signupbutton">Sign Up</button>
                 </form>
             </div>
 

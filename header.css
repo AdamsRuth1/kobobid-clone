@@ -68,7 +68,7 @@ cursor: pointer;
     color: black;
     justify-content: space-between;
     align-items: center;
-    position: static;
+    
     
     
    
@@ -237,11 +237,13 @@ p {
     text-decoration: none;
     color: white;
 }
-.footer-container{
+.footer-container,
+.footer-container1{
 padding: 20px;
 width: 100%;
 font-size: 20px;
 }
+
 .footer-heading {
     font-family: 'FuturaPTMedium', sans-serif;
     padding-bottom: 10px;
@@ -275,9 +277,7 @@ font-size: 20px;
     .first-list{
         display: none;
     }
-    .logo-div{
-        margin-left: -200px;     
-    }
+    
     
     .img-logo{
         display: flex;
@@ -287,26 +287,43 @@ font-size: 20px;
         font-size: 10px;
        
     } */
-    
-    
-    
+
+.first-list-login,
+.first-list-signup{
+    list-style: none;
+    background-color: rgb(233, 227, 227);
+    margin: 10px;
+    padding: 10px;
+}
+.first-list-signup{
+    margin-left: -25px;
+}
+.first-list-login{
+    margin-left: -50px;
+}
+    .first-a{
+        color: black;
+    }
     .fa-bars{
         display: flex;
         font-size: 40px;
         padding: 30px;
         margin-left: -20px;
     }
+    .img-logo ul{
+       align-items: center;
+       margin-left: -60px;
+       font-size: 15px;
+    }
+    .mainlogo{
+        width: 20px;
+    }
    .logo-div img{
     width: 150px;
     margin-left: 170px;  
    }
-    .img-logo{
-       margin: 0;
-        width: 100%;
-    }
-    .img-logo img{
-    width: 50px;
-}
+ 
+
     .scratch-auction-div{
         display: flex;
         flex-direction: column;
@@ -323,9 +340,18 @@ font-size: 20px;
         display: flex;
         flex-direction: column;
     }
-    .footer-container{
-        margin-left: -100px;
+    .footer-container,
+    .footer-container1{
+        margin-left: -120px;
         margin-right: 100px;
+        
+    }
+    .footer-container1{
+        margin-bottom: 0px;
+    }
+    
+    .footer-logo{
+        margin-left: -10px;
     }
     /* .text-overlay-scratchcard,
     .text-overlay-auction,
