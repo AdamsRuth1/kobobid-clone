@@ -158,8 +158,8 @@
     </head>
     <body>
         <div class="overalldiv">
-        <nav class="nav-div" >
-            <i class="fa-solid fa-bars" id="fa-bars" onclick="toggleSidebar()"></i>
+        <nav class="nav-div" role="navigation">
+            <i class="fa-solid fa-bars" id="fa-bars" onclick="toggleSidebar()" aria-expanded="false" ></i>
                     <figure class="logo-div"><img src="./assets/logo2.png"></figure>
                 <ul>
                    
@@ -177,7 +177,7 @@
                 </ul>
             
         </nav>
-        <nav class="sidebar-nav">
+        <nav class="sidebar-nav" role="navigation" aria-expanded="false" aria-controls="sidebarNav">
             <ul class="sidebar-ul">
                 <li tabindex="0">AUCTIONS</li>
                 <li tabindex="0">RAFFLES</li>
@@ -195,7 +195,7 @@
         </nav>
     
     
-        <nav class="img-logo">
+        <nav class="img-logo" role="navigation">
             <ul>
                 <figure class="mainlogo"><a href="scratchcard.html"><img src="./assets/nav_scratchcards.svg" alt=""></a>scratch Cards</figure>
                 <figure class="mainlogo"><a href="scratchcard.html"><img src="./assets/nav_raffles.svg" alt=""></a>Raffles</figure>
@@ -205,20 +205,20 @@
         </nav>
      
 <div class="main-div">
-    <div class="text-div"> 
+    <section class="text-div"> 
         <h1> PLAY AND EARN</h1>
         <P>Playing games on Kobobid can be beneficial in serveral ways. Firstly, it offers a fun and entertaining experience, allowing users to relax and unwind. Engaging in games can also improve cognitive abilities, such as problem-solving skills, memory, and strategic thinking.</P>  
-    <button class="learn">Learn more</button>
-    </div>
+    <button class="learn"  aria-controls="learnMoreContent">Learn more</button>
+    </s>
    
 </div>
 <div class="welcome-div">
     <figure><img src="https://cdn.kobobid.com/live/images/about_img.png" alt=""></figure>
-    <section>
+    <article>
         <h1>
             Welcome to KoboBid!</h1>
             <p>We’re a fast-paced bidding website where you can win and purchase some of your favorite, AUTHENTIC items for as little as ONE Kobo by bidding. No, we’re not kidding! And no, we’re not the traditional “going once, going twice” auctions that you may be familiar with. Kobobid is Nigeria’s first foray into penny auctions on a large scale. With our own “kobo auctions”, the vision is to inject some fun and interactiveness into auctions and the Nigerian e-commerce webspace, while providing an alternate way for people to afford otherwise expensive goods.</p>
-    </section>
+    </article>
 </div>
 <div class="lastdiv-container">
     <div class="footer-text">
@@ -227,31 +227,31 @@
 We thrive on the notion that everyone should have the opportunity to get the good things they want from life, in order to improve their general standard of living. This is why we’ve developed this business to place the opportunity to simply bid for what you want right at your fingertips.</p>
      </div>
 <div class="last-divv">
-    <div class="inner-container"> <img class="image-container" src="./assets/access.png">
+    <section class="inner-container"> <figure> <img class="image-container" src="./assets/access.png" alt="access logo"></figure>
         <h1>Access</h1>
         <div>From bidding to winning and buying, we put the most scarce and most valuable items at your fingertips for incredibly discounted costs.</div>
-    </div>
-    <div class="inner-container"> <img class="image-container" src="./assets/enjoyment.png">
+    </section>
+    <section class="inner-container"> <figure> <img class="image-container" src="./assets/enjoyment.png" alt="enjoyment logo"></figure>
         <h1>Authenticity</h1>
         <div>We don’t do sub-standard. Every item you win or buy on Kobobid is from a trusted source known for the quality of their products.</div>
-    </div>
-    <div class="inner-container"> <img class="image-container" src="./assets/fairness.png">
+    </section>
+    <section class="inner-container"> <figure><img class="image-container" src="./assets/fairness.png" alt="fairness logo"></figure>
         <h1>Fairness</h1>
         <div>At KoboBid, everyone has the fair chance - to bid, purchase items, partner with us, or start a career with us. Simply join our community.</div>
-    </div>
-    <div class="inner-container"> <img class="image-container" src="./assets/enjoyment.png">
+    </section>
+    <section class="inner-container"><figure><img class="image-container" src="./assets/enjoyment.png" alt="enjoyment logo"></figure> 
         <h1>Enjoyment</h1>
-        <div>Quality enjoyment is for everybody. We’re about helping you live your best life by providing you with items that always bring you joy.</div>
-    </div>
+        <p>Quality enjoyment is for everybody. We’re about helping you live your best life by providing you with items that always bring you joy.</p>
+    </section>
 </div>
 </div>
 <footer>
    
     <div class="last-div">
         <div class="footer-first-container" style="display: flex; flex-direction: column; "  >
-            <div class="footer-logo">
-                <img src="https://cdn.kobobid.com/live/images/logo_white.png">
-            </div>
+            <figure class="footer-logo">
+                <img src="https://cdn.kobobid.com/live/images/logo_white.png" alt="logo">
+            </figure>
             <p style="font-size: 20px; color: white;">Nigeria's leading online penny auction platform for high quality products and offerings to help you
                 afford your best life.</p>
                 <div class="social-media-list">
