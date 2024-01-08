@@ -268,11 +268,11 @@
 
 <body>
 <div class="header-logo">
-    <i class="fa-solid fa-bars" id="fa-bars" onclick="toggleSidebar()"></i>
-    <i class="fa-solid fa-times" id="times" onclick="toggleSidebar()"></i>
+    <i class="fa-solid fa-bars" id="fa-bars" onclick="toggleSidebar() " aria-expanded="false" aria-controls="sidebarNav"></i>
+    
     <figure><img src="./assets/logo2.png" alt="kobobid logo"></figure>
 </div>
-<nav class="sidebar-nav" role="navigation">
+<nav class="sidebar-nav" role="navigation" aria-expanded="false" aria-controls="sidebarNav">
     <ul>
         <li tabindex="0">AUCTIONS</li>
         <li tabindex="0">RAFFLES</li>

@@ -139,7 +139,7 @@ background-color: #feaa5d;
 <body>
     <div class="overalldiv">
         <nav class="nav-div" role="navigation" >
-            <i class="fa-solid fa-bars" id="fa-bars" onclick="toggleSidebar()"></i>
+            <i class="fa-solid fa-bars" id="fa-bars" onclick="toggleSidebar()" aria-expanded="false" aria-controls="sidebarNav"></i>
                     <figure class="logo-div"><img src="./assets/logo2.png" alt="kobobid logo"></figure>
                 <ul>
                    
@@ -157,7 +157,7 @@ background-color: #feaa5d;
                 </ul>
             
         </nav>
-        <nav class="sidebar-nav" role="navigation">
+        <nav class="sidebar-nav" role="navigation" aria-expanded="false" aria-controls="sidebarNav">
             <ul class="sidebar-ul">
                 <li tabindex="0">AUCTIONS</li>
                 <li tabindex="0">RAFFLES</li>
