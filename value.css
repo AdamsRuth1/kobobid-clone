@@ -1,0 +1,128 @@
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    height: 1000px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+.nav-bar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: rgb(120, 184, 200);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.nav-bar ul li:hover:after {
+    width: 100%;
+}
+
+.main-div {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(53, 206, 233);
+}
+
+.text-div {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.body-image {
+    width: 500px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: rgb(57, 54, 54);
+    color: white;
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orange;
+    color: black;
+}
+
+.footer-text {
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 10px;
+
+}
+
+.image-container {
+    width: 100px;
+    margin-right: 10px;
+
+}
+
+.last-div {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    height: 400px;
+    margin-top: 20;
+}
+
+.inner-container {
+    border: none;
+    box-shadow: 3px 3px 3px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 10px;
+
+}
+
+.lastdiv-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.inner-container:hover {
+    transform: scale(1.1);
+    height: 400px;
+    margin-top: 20px;
+    transition: 0.5s;
+}

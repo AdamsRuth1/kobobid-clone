@@ -1,0 +1,307 @@
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    padding: o;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-logo {
+    display: flex;
+    position: relative;
+}
+
+.header-logo img {
+    width: 300px;
+}
+
+nav {
+
+    width: 700px;
+    padding: 30px;
+    /* Added padding for better appearance */
+    margin-left: -60px;
+    display: none;
+    position: absolute;
+    background-color: white;
+
+
+}
+
+ul {
+    width: 50%;
+}
+
+
+nav li {
+    list-style: none;
+    background-color: white;
+    padding: 15px;
+    /* Added padding for better appearance */
+    cursor: pointer;
+}
+
+/* Add styling for the bars icon */
+.fa-bars,
+.fa-times {
+    font-size: 54px;
+    /* Adjust the font size as needed */
+    cursor: pointer;
+    color: rgb(91, 88, 88);
+    padding: 20px;
+}
+
+.fa-times {
+    position: absolute;
+    left: 50%;
+    display: none;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    display: none;
+    height: 100%;
+
+}
+
+.first-list-login,
+.first-list-signup {
+    width: 300px;
+    height: 20px;
+    background-color: #81c6c9;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.first-list-signup {
+    margin-top: 20px;
+}
+
+.login {
+    width: 600px;
+    height: 60px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -20px;
+    border: 3px solid #81c6c9;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.main-div {
+    display: flex;
+}
+
+.desktop-banner {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    /* Set the width to 100% to make it responsive */
+    margin-top: 800px;
+    height: 300px;
+    /* You can adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.first-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 900px;
+
+
+}
+
+.form {
+    width: 50%;
+    margin-left: 150px;
+
+
+}
+
+.header-text {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+input {
+    width: 600px;
+    height: 60px;
+    background-color: rgba(224, 231, 255, .52);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+label {
+    margin-left: 10px;
+    color: rgb(120, 116, 116);
+}
+
+.second-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://cdn.kobobid.com/live/icon/Pattern2.png);
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    margin-top: -100px;
+}
+
+.campaign-code {
+    display: none;
+}
+
+.referal {
+    display: none;
+}
+
+.container-sec {
+    width: 100%;
+}
+
+.checkbox-container {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+.checktext {
+    font-size: 20px;
+    color: black;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.signupbutton {
+    width: 600px;
+    height: 60px;
+    background-color: #81c6c9;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border-radius: 3px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, .2);
+
+}
+
+@media screen and (min-width: 280px) and (max-width: 1240px) {
+    .second-div {
+        display: none;
+    }
+
+    .form {
+        width: 100%;
+        /* Adjust the width of the form */
+        margin: auto;
+        /* Center the form horizontally */
+        margin-top: 50px
+    }
+
+    .first-div {
+        height: 100%;
+        margin-left: 20px;
+    }
+
+    .main-div {
+        margin-left: 30px;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    input {
+        width: 80%;
+        /* Make input fields full width */
+        box-sizing: border-box;
+        /* Include padding and border in the width */
+        margin-left: 20px;
+    }
+
+    label {
+        margin-left: 20px;
+    }
+
+    .campaign-code,
+    .referal {
+        width: 80%;
+        margin-left: 40px;
+    }
+
+    .header-text {
+        font-size: 15px;
+    }
+
+    .desktop-banner {
+        object-fit: contain;
+        margin-top: 0;
+        margin-bottom: -120px;
+        margin-top: -70px;
+    }
+
+    .header-logo img {
+        width: 230px;
+
+    }
+
+    .signupbutton {
+        width: 100%;
+    }
+
+    .checktext {
+        width: 80%;
+
+    }
+
+    .checkbox-div {
+        margin-left: -25px;
+
+    }
+}

@@ -1,0 +1,136 @@
+::after,
+        ::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .general-div {
+            display: flex;
+        }
+
+        .first-main-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            padding: 90px;
+        }
+
+
+        .password-label {
+            display: block;
+            /* Take up remaining space */
+            margin-top: 15px;
+            color: #3c3f3c;
+            margin-right: 30%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .phone-password-container {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-containerpass {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .password-label {
+            margin-right: 170px;
+            color: #979997;
+        }
+
+        .forgot-password-label {
+            margin-top: 15px;
+            color: #979997;
+        }
+
+        .password-input {
+            width: 400px;
+            height: 60px;
+            background-color: rgba(224, 231, 255, .52);
+            border: none;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        /* .toggle-password{
+            position: fixed;
+            left: 50%;
+            bottom: 50%;
+            transform: translateY(50%);
+
+        } */
+        .phone-div input {
+            width: 400px;
+            height: 60px;
+            background-color: rgba(224, 231, 255, .52);
+            border: none;
+            border-radius: 4px;
+            margin-top: 10px;
+
+        }
+
+        .phone-label {
+            color: #979997;
+        }
+
+        .reminder {
+            width: 400px;
+        }
+
+
+        button {
+            width: 400px;
+            height: 60px;
+            color: white;
+            background-color: #81c6c9;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 5px;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, .2);
+        }
+
+        .second-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(https://cdn.kobobid.com/live/icon/Pattern2.png);
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container-sec {
+            width: 100%;
+            margin: 0;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+        }
+
+        @media screen and (min-width: 280px) and (max-width: 1240px) {
+            .container-sec {
+                display: none;
+            }
+        }

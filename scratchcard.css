@@ -1,0 +1,153 @@
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.overalldiv {
+    overflow-x: hidden;
+}
+
+.rafflesBanner img {
+    width: 100%;
+}
+
+.gamesdiv {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.firstdiv {
+    width: 20%;
+    background-color: #fafafa;
+    box-shadow: 0 6px 15px #00000015;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.firstdiv img {
+    width: 80%;
+
+}
+
+.scrctchwin {
+    border: 3px solid #fd8624;
+    color: #fd8624;
+    background-color: white;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, .2);
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.subscribe {
+    display: flex;
+    background-image: url(https://cdn.kobobid.com/live/icon/Pattern2.png);
+    padding: 20px 15px 40px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+
+}
+
+.subscribe span {
+    font-size: 30px;
+    color: white;
+    width: 50%;
+    margin-left: 100px;
+}
+
+.subscribe input,
+.subscribe button {
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 50px;
+    cursor: pointer;
+
+
+}
+
+input {
+    width: 300px;
+
+}
+
+.subscribe button {
+    background-color: #feaa5d;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1240px) {
+    .img-logo img {
+        width: 50px;
+    }
+
+    .nav-div img {
+        width: 100px;
+        margin-left: -40px;
+    }
+
+    .scratchdi {
+        margin-top: 50px;
+    }
+
+    .gamesdiv {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .firstdiv {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .firstdiv img {
+        width: 30%;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .subb span {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+
+    input {
+        width: 100%;
+        text-align: center;
+    }
+
+    .subb {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subscribe button {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
